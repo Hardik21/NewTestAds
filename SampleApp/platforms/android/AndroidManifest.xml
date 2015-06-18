@@ -8,6 +8,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:hardwareAccelerated="false" android:name="com.apptracker.android.module.AppModuleActivity" android:theme="@android:style/Theme.Translucent" />
     </application>
     <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 </manifest>

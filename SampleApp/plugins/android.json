@@ -7,17 +7,40 @@
         "files": {
             "res/xml/config.xml": {
                 "parents": {
-                    "/*": []
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"AppTracker\"><param name=\"android-package\" value=\"com.apptracker.android.phonegap.AppTrackerPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
                 }
             },
             "AndroidManifest.xml": {
                 "parents": {
-                    "/*": [],
-                    "/manifest/application": []
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<activity android:configChanges=\"keyboard|keyboardHidden|orientation|screenSize\" android:hardwareAccelerated=\"false\" android:name=\"com.apptracker.android.module.AppModuleActivity\" android:theme=\"@android:style/Theme.Translucent\" />",
+                            "count": 1
+                        }
+                    ]
                 }
             }
         }
     },
-    "installed_plugins": {},
+    "installed_plugins": {
+        "com.apptracker.phonegap.android": {
+            "PACKAGE_NAME": "com.appfireworks.sampleapp"
+        }
+    },
     "dependent_plugins": {}
 }

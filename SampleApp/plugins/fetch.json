@@ -1,0 +1,10 @@
+{
+    "com.apptracker.phonegap.android": {
+        "source": {
+            "type": "local",
+            "path": "F:\\Hardik\\PhoneGap_Demo\\leadbolt_android_sdk_phonegap_v1.3-5.1\\GitFolder\\trunk\\ApptrackerPluginAndroid"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}
